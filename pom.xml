@@ -48,19 +48,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.java.version>1.6</project.build.java.version>
         <github.url>file://${project.basedir}/mvn-local-repo</github.url>
-        <distributionManagement.repository.url>${pom.url}</distributionManagement.repository.url>
     </properties>
 
     <distributionManagement>
         <snapshotRepository>
             <id>nexus</id>
             <name>Releases</name>
-            <url>${distributionManagement.repository.url}/maven-snapshots</url>
+            <url>${repository.url}/maven-snapshots</url>
         </snapshotRepository>
         <repository>
             <id>nexus</id>
             <name>Releases</name>
-            <url>${distributionManagement.repository.url}/maven-releases</url>
+            <url>${repository.url}/maven-releases</url>
         </repository>
     </distributionManagement>
 
